@@ -1,13 +1,27 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+// Uncomment and import additional components as needed
+// import About from "./components/About/About";
+// import Skills from "./components/Skills/Skills";
+// import Portfolio from "./components/Portfolio/Portfolio";
+// import Contact from "./components/Contact/Contact";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div>
-        <p>hello world !</p>
-      </div>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Uncomment to add more routes */}
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

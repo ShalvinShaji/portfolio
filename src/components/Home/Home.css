@@ -1,0 +1,15 @@
+/* Main container styles */
+.main-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers items */
+  align-items: center; /* Vertically centers items */
+  height: calc(
+    100vh - 56px
+  ); /* Adjust this value based on the actual height of your navbar */
+  text-align: center; /* Center-align text */
+  padding: 1rem; /* Optional padding */
+}
+
+.home {
+  color: #90209e;
+}
