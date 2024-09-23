@@ -1,4 +1,7 @@
-/* Custom styles */
+.navbar {
+  background-color: white !important;
+}
+
 .navbar-brand {
   font-size: 1.5rem !important;
   font-weight: bold;
@@ -7,7 +10,7 @@
 
 .navbar-nav .nav-link {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 450;
   color: #333;
 }
 
@@ -42,7 +45,7 @@
   border-radius: 2px;
   background-color: #90209e; /* Underline color */
   transform: scaleX(0); /* Start hidden */
-  transition: transform 0.3s ease; /* Animation */
+  transition: transform 0.3s ease-in-out; /* Animation */
   transform-origin: bottom right; /* Animation starts from bottom right */
 }
 
