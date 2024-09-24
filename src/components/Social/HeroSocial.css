@@ -1,10 +1,12 @@
 .hero-social {
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  /* position: absolute; */
+  /* left: 0;
+  top: 50%; */
+  /* transform: translateY(-50%); */
 }
 
 .social_link {
@@ -12,14 +14,15 @@
   text-decoration: none;
   color: #333;
   font-size: 1rem;
-  transform: rotate(270deg);
-  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth animation */
+  /* transform: rotate(270deg); */
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 
 /* Change on hover */
 .social_link:hover {
   /* color: #90209e;  */
-  transform: rotate(270deg) translateX(3px); /* Move the link 3px up while keeping the rotation */
+  transform: translateX(3px);
+  /* Move the link 3px up while keeping the rotation */
 }
 
 /* Media query for tablets and smaller screens */

@@ -13,24 +13,34 @@
 .home {
   color: #90209e;
 }
+.hero-fullstop {
+  color: #90209e;
+}
 
 /* Larger screens (desktops, tablets) */
 .hero-greet {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .hero-name {
-  font-size: 10rem;
+  font-size: 7rem;
+}
+.hero-role {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
   .hero-greet {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-name {
-    font-size: 5rem;
+    font-size: 4.5rem;
+  }
+  .hero-role {
+    font-size: 3rem;
   }
 
   /* Adjust padding on smaller screens */
@@ -42,11 +52,15 @@
 /* Extra small screens (like very small phones) */
 @media (max-width: 480px) {
   .hero-greet {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .hero-name {
     font-size: 3.5rem;
+  }
+
+  .hero-role {
+    font-size: 1rem;
   }
 
   /* Further adjustments for small phones */

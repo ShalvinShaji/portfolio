@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <HeroSocial />
+      {/* <HeroSocial /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Uncomment to add more routes */}
