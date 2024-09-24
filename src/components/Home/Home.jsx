@@ -3,18 +3,16 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="main-container">
-      <div>
-        <h1>
-          The best way to predict the <span className="home"> future</span> is
-          to create it.
-        </h1>
-        <p>
-          This is the main content of the <span className="home">home</span>{" "}
-          page.
-        </p>
+    <>
+      <div className="main-container">
+        <div>
+          <div className="d-flex  flex-column justify-content-start align-items-start">
+            <h1 className="hero-greet">Hey, I'am </h1>
+            <h1 className="hero-name">Shalvin.</h1>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

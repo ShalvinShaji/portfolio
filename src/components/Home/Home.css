@@ -13,3 +13,44 @@
 .home {
   color: #90209e;
 }
+
+/* Larger screens (desktops, tablets) */
+.hero-greet {
+  font-size: 3rem;
+}
+
+.hero-name {
+  font-size: 10rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hero-greet {
+    font-size: 2rem;
+  }
+
+  .hero-name {
+    font-size: 5rem;
+  }
+
+  /* Adjust padding on smaller screens */
+  .main-container {
+    padding: 0.5rem;
+  }
+}
+
+/* Extra small screens (like very small phones) */
+@media (max-width: 480px) {
+  .hero-greet {
+    font-size: 1.5rem;
+  }
+
+  .hero-name {
+    font-size: 3.5rem;
+  }
+
+  /* Further adjustments for small phones */
+  .main-container {
+    padding: 0.25rem;
+  }
+}
