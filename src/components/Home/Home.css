@@ -19,28 +19,35 @@
 
 /* Larger screens (desktops, tablets) */
 .hero-greet {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .hero-name {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 .hero-role {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.hero-desc {
+  font-size: 1rem;
   font-weight: 500;
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
   .hero-greet {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .hero-name {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .hero-role {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .hero-desc {
+    font-size: 1rem;
   }
 
   /* Adjust padding on smaller screens */
@@ -60,6 +67,9 @@
   }
 
   .hero-role {
+    font-size: 2rem;
+  }
+  .hero-desc {
     font-size: 1rem;
   }
 

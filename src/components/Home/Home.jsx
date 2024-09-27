@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import HeroSocial from "../Social/HeroSocial";
 
 const Home = () => {
   return (
@@ -8,21 +7,22 @@ const Home = () => {
       <div className="main-container">
         <div>
           {/* <div className="d-flex  flex-column justify-content-start align-items-start"> */}
-          {/* <div className="d-flex flex-column  justify-content-center align-items-start"> */}
-          <h1 className="hero-greet text-start">Hi,</h1>
-          <h1 className="hero-name text-start">
-            I'am Shalvin<span className="hero-fullstop">.</span>
-          </h1>
-          <p className="hero-role">Front-End Developer</p>
-          {/* <p>
-            Passionate front-end developer sculpting digital landscapes where
-            creativity meets functionality.
-          </p> */}
-          <HeroSocial />
+          <div className="d-flex flex-column  justify-content-center align-items-center">
+            <h1 className="hero-name ">Hey, I'm Shalvin</h1>
+            {/* <h1 className="hero-name ">
+              <span className="hero-fullsto">.</span>
+            </h1> */}
+          </div>
+          {/* <p className="hero-role">Front-End Developer</p> */}
+          <div>
+            <p className="hero-desc">
+              Code Architect | Innovator | Problem Solver <br />
+              Exploring the world of tech, one line at a time.
+            </p>
+          </div>
+          <p></p>
+          <p>Find me here:</p>
         </div>
-        {/* <h1 className="hero-role text-start">Front-end developer, DB Administrator</h1> */}
-        {/* </div> */}
-        {/* </div> */}
       </div>
     </>
   );
