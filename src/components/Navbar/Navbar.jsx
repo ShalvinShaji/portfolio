@@ -20,8 +20,8 @@ const Navbar = () => {
   return (
     <nav className="navbar fixed-top">
       <div className="container">
-        <Link to="/" className="navbar-brand">
-          Shalvin.
+        <Link to="/" className="navbar-brand logo-box">
+          S
         </Link>
 
         <button
@@ -46,7 +46,7 @@ const Navbar = () => {
                     key={item}
                   >
                     <Link
-                      to={`/${item.toLowerCase()}`}
+                      to={item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase()}`}
                       className="fullscreen-menu-link"
                       onClick={toggleMenu}
                     >

@@ -20,8 +20,7 @@ const Home = () => {
               Exploring the world of tech, one line at a time.
             </p>
           </div>
-          <p></p>
-          <p>Find me here:</p>
+          <p className="hero-social">Find me here:</p>
         </div>
       </div>
     </>
