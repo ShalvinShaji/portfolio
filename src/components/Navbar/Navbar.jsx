@@ -4,120 +4,62 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [showMenuItems, setShowMenuItems] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      setMenuOpen(true);
+      setShowMenuItems(false);
+      setTimeout(() => setShowMenuItems(true), 300);
+    } else {
+      setShowMenuItems(false);
+      setTimeout(() => setMenuOpen(false), 300);
+    }
   };
 
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-light  fixed-top">
-        <div className="container">
-          <Link to="/" className="navbar-brand">
-            Shalvin.
-          </Link>
+    <nav className="navbar fixed-top">
+      <div className="container">
+        <Link to="/" className="navbar-brand">
+          Shalvin.
+        </Link>
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={toggleMenu}
-            aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+        <button
+          className={`custom-menu-button ${isMenuOpen ? "open" : ""}`}
+          type="button"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation"
+        >
+          <span className="menu-line top-line"></span>
+          <span className="menu-line bottom-line"></span>
+        </button>
 
-          <div
-            className={`collapse navbar-collapse justify-content-end ${
-              isMenuOpen ? "show" : ""
-            }`}
-          >
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to="/" className="nav-link active">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/portfolio" className="nav-link">
-                  Portfolio
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/blog" className="nav-link">
-                  Blog
-                </Link>
-              </li>
+        <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>
+          {showMenuItems && (
+            <ul className="fullscreen-menu-list">
+              {["Home", "About", "Portfolio", "Blog", "Contact"].map(
+                (item, index) => (
+                  <li
+                    className="fullscreen-menu-item"
+                    style={{ animationDelay: `${index * 0.1}s` }} // Delay based on index
+                    key={item}
+                  >
+                    <Link
+                      to={`/${item.toLowerCase()}`}
+                      className="fullscreen-menu-link"
+                      onClick={toggleMenu}
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
-          </div>
+          )}
         </div>
-      </nav>
-
-      {/* Full-Screen Menu */}
-      {isMenuOpen && (
-        <div className="fullscreen-menu">
-          <button
-            className="close-button"
-            onClick={toggleMenu}
-            aria-label="Close menu"
-          >
-            &times;
-          </button>
-          <ul className="fullscreen-menu-list">
-            <li className="fullscreen-menu-item">
-              <Link
-                to="/"
-                className="fullscreen-menu-link"
-                onClick={toggleMenu}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="fullscreen-menu-item">
-              <Link
-                to="/about"
-                className="fullscreen-menu-link"
-                onClick={toggleMenu}
-              >
-                About
-              </Link>
-            </li>
-            <li className="fullscreen-menu-item">
-              <Link
-                to="/skills"
-                className="fullscreen-menu-link"
-                onClick={toggleMenu}
-              >
-                Skills
-              </Link>
-            </li>
-            <li className="fullscreen-menu-item">
-              <Link
-                to="/portfolio"
-                className="fullscreen-menu-link"
-                onClick={toggleMenu}
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li className="fullscreen-menu-item">
-              <Link
-                to="/contact"
-                className="fullscreen-menu-link"
-                onClick={toggleMenu}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
-    </>
+      </div>
+    </nav>
   );
 };
 

@@ -1,115 +1,132 @@
+/* Basic Navbar Styles */
 .navbar {
-  background-color: white !important;
+  background-color: #fff;
+  padding: 1rem;
 }
 
 .navbar-brand {
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
 }
 
-.navbar-nav .nav-link {
-  font-size: 1rem;
-  font-weight: 450;
-  color: #333;
-}
-
-/* Active link color */
-/* .navbar-nav .nav-link.active {
-  color: #90209e; 
-} */
-
-.navbar-nav .nav-item:not(:last-child) {
-  margin-right: 1.5rem;
-}
-
-/* Optional: Change navbar appearance on scroll */
-.navbar.scrolled {
-  background-color: #90209e !important; /* Change color on scroll */
-  transition: background-color 0.3s ease;
-}
-
-.nav-link {
-  position: relative;
-  text-decoration: none; /* Remove default underline */
-  color: #333; /* Default link color */
-}
-
-.nav-link::after {
-  content: "";
+.custom-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  right: 40px; /* Adjust as per your needs */
+  top: 32px; /* Adjust as per your needs */
+  z-index: 2000; /* Ensure menu button stays on top of the fullscreen menu */
+}
+
+/* Styling the menu lines */
+.menu-line {
+  display: block;
   width: 100%;
-  height: 1.3px; /* Underline thickness */
-  border-radius: 2px;
-  background-color: #90209e; /* Underline color */
-  transform: scaleX(0); /* Start hidden */
-  transition: transform 0.3s ease-in-out; /* Animation */
-  transform-origin: bottom right; /* Animation starts from bottom right */
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease;
+  border-radius: 7px;
 }
 
-.nav-link:hover::after {
-  transform: scaleX(1); /* Show underline on hover */
-  transform-origin: bottom left; /* Animation ends at bottom left */
+.custom-menu-button.open .menu-line {
+  background-color: #90209e;
 }
 
+.custom-menu-button.open .bottom-line {
+  width: 50%; /* Decrease length of bottom line when the menu is open */
+}
+
+.custom-menu-button .bottom-line {
+  width: 100%; /* Return to 100% width when the menu is closed */
+}
+
+.custom-menu-button:hover .bottom-line {
+  width: 50%; /* Hover effect */
+}
+
+/* Fullscreen Menu Styles */
 .fullscreen-menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff; /* Slightly transparent white */
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  z-index: 1333; /* Behind the menu button */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  z-index: 2000; /* Ensure it's above other content */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Prevent interactions */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
 }
 
-.close-button {
-  position: absolute;
-  top: 0px;
-  right: 30px;
-  font-size: 3rem;
-  background: none;
-  border: none;
-  color: #333;
-  cursor: pointer;
+/* Show the menu */
+.fullscreen-menu.show {
+  opacity: 1; /* Fully visible */
+  pointer-events: auto; /* Allow interactions */
 }
 
 .fullscreen-menu-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
 .fullscreen-menu-item {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
+  position: relative; /* Needed for the pseudo-element positioning */
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly lower */
+  animation: slide-in 0.5s forwards; /* Apply the animation */
 }
+
+/* Keyframes for sliding in from the bottom */
+@keyframes slide-in {
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
 
 .fullscreen-menu-link {
   font-size: 1.5rem;
+  color: #fff;
   text-decoration: none;
-  color: #333;
+  position: relative; /* Needed for the pseudo-element */
+  overflow: hidden; /* Hide the pseudo-element overflow */
 }
 
-.navbar-toggler,
-.navbar-toggler:focus {
-  border: none !important; /* Remove any border */
-  background: none; /* Remove background */
-  cursor: pointer; /* Change cursor to pointer */
-  outline: none !important;
-  box-shadow: none !important;
-  color: #333 !important;
+/* Pseudo-element for the underline */
+.fullscreen-menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Position just below the text */
+  width: 100%;
+  height: 1.2px; /* Height of the underline */
+  background-color: #90209e;
+  transform: scaleX(0); /* Start hidden with scale */
+  transform-origin: left; /* Ensure animation starts from the left */
+  transition: transform 0.3s ease; /* Animate the transform */
+  border-radius: 5px;
 }
 
-.navbar-toggler:focus {
-  outline: none; /* Remove outline on focus */
+/* Hover effect to reveal the underline from left to right */
+.fullscreen-menu-link:hover::after {
+  transform: scaleX(1);
 }
 
-.navbar-toggler:active {
-  outline: none; /* Remove outline on active */
+.fullscreen-menu-link:hover {
+  text-decoration: none;
 }
