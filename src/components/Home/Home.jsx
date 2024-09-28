@@ -19,7 +19,8 @@ const Home = () => {
           {/* <p className="hero-role">Front-End Developer</p> */}
           <div>
             <p className="hero-desc">
-              Web Dev | DB Administrator | Problem Solver <br />
+              Web Dev | DB Administrator
+              <br />
               Exploring the world of tech, one line at a time.
             </p>
           </div>

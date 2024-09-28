@@ -1,0 +1,78 @@
+.about-page {
+  height: calc(100vh - 70px);
+  padding-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.page-content {
+  width: 80vw; /* Default width for larger devices */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.about-desc,
+.about-skills {
+  width: 40vw; /* Default width for each section on larger devices */
+  padding: 20px;
+}
+
+.about-desc {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .about-desc {
+    max-width: 100%; /* Allow full width on smaller screens */
+  }
+}
+
+.about-desc p,
+.about-skills p {
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next line */
+  justify-content: center; /* Center the items */
+}
+
+.skill {
+  flex-basis: 23%; /* Each skill takes up 23% of the row */
+  margin: 10px;
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .skill {
+    flex-basis: 45%; /* For medium devices, display 2 skills per row */
+  }
+}
+
+/* Responsive styles for medium and small devices */
+@media (max-width: 992px) {
+  .page-content {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-desc,
+  .about-skills {
+    width: 100vw;
+  }
+}

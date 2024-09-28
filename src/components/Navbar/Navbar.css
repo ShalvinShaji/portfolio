@@ -125,7 +125,7 @@
   left: 0;
   bottom: -2px; /* Position just below the text */
   width: 100%;
-  height: 1.2px !important; /* Enforce height of 1px */
+  height: 1px !important; 
   background-color: #c4a989;
   transform: scaleX(0); /* Start hidden with scale */
   transform-origin: left; /* Ensure animation starts from the left */
