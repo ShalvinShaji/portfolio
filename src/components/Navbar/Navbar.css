@@ -5,11 +5,11 @@
 
 .logo-box {
   display: inline-block;
-  font-size: 1.3rem; /* Adjust font size as needed */
+  font-size: 1.3rem; 
   font-family: "Times New Roman", Times, serif;
   /* font-weight: 400; */
   color: #c4a989 !important;
-  border: 1px solid #c4a989; /* Left border */
+  border: 1px solid #c4a989;
   padding: 5px 12px; /* Padding to create the box */
   text-align: center;
   line-height: 1; /* Make sure the text is centered vertically */
@@ -32,8 +32,8 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  right: 40px; /* Adjust as per your needs */
-  top: 32px; /* Adjust as per your needs */
+  right: 40px;
+  top: 32px; 
   z-index: 2000; /* Ensure menu button stays on top of the fullscreen menu */
 }
 
