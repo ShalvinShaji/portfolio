@@ -8,13 +8,7 @@
   ); /* Adjust this value based on the actual height of your navbar */
   text-align: center; /* Center-align text */
   padding: 1rem; /* Optional padding */
-}
-
-.home {
-  color: #90209e;
-}
-.hero-fullstop {
-  color: #90209e;
+  color: #999;
 }
 
 /* Larger screens (desktops, tablets) */
@@ -33,7 +27,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 .hero-desc {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
 }
@@ -41,6 +35,10 @@
   font-size: 1rem;
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
+}
+
+.hero-name-color {
+  color: #c4a989;
 }
 
 /* Mobile styles */

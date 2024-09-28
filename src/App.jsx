@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
-import HeroSocial from "./components/Social/HeroSocial";
 
 // Uncomment and import additional components as needed
 // import About from "./components/About/About";
@@ -14,6 +13,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
+
       {/* <HeroSocial /> */}
       <Routes>
         <Route path="/" element={<Home />} />

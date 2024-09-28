@@ -1,0 +1,6 @@
+body,
+html,
+#root {
+  background-color: #1b1b1b !important;
+  color: white; /* Optional: To ensure the text is readable on a dark background */
+}
