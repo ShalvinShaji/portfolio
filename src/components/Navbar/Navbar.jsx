@@ -38,23 +38,25 @@ const Navbar = () => {
         <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>
           {showMenuItems && (
             <ul className="fullscreen-menu-list">
-              {["Home", "About", "Portfolio", "Blog", "Contact"].map(
-                (item, index) => (
-                  <li
-                    className="fullscreen-menu-item"
-                    style={{ animationDelay: `${index * 0.1}s` }} // Delay based on index
-                    key={item}
+              {["Home", "Portfolio", "Blog"].map((item, index) => (
+                <li
+                  className="fullscreen-menu-item"
+                  style={{ animationDelay: `${index * 0.1}s` }} // Delay based on index
+                  key={item}
+                >
+                  <Link
+                    to={
+                      item.toLowerCase() === "home"
+                        ? "/"
+                        : `/${item.toLowerCase()}`
+                    }
+                    className="fullscreen-menu-link"
+                    onClick={toggleMenu}
                   >
-                    <Link
-                      to={item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase()}`}
-                      className="fullscreen-menu-link"
-                      onClick={toggleMenu}
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
-              )}
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           )}
         </div>

@@ -15,13 +15,15 @@
   font-size: 1rem;
   color: #999;
   /* transform: rotate(270deg); */
-  transition: transform 0.3s ease; /* Add transition for smooth animation */
+  transition-duration: 0.5s;
 }
 
 /* Change on hover */
 .social_link:hover {
   /* color: #90209e;  */
   transform: translateX(3px);
+  color: #c4a989;
+
   /* Move the link 3px up while keeping the rotation */
 }
 

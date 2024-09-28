@@ -9,7 +9,9 @@ const HeroSocial = () => {
           href="https://www.linkedin.com/in/shalvinshaji"
           className="social_link"
           target="_blank"
-        ></a>
+        >
+          LinkedIn
+        </a>
       </div>
       <div>
         <a
@@ -17,7 +19,7 @@ const HeroSocial = () => {
           className="social_link"
           target="_blank"
         >
-          github
+          GitHub
         </a>
       </div>
       <div>
@@ -26,7 +28,7 @@ const HeroSocial = () => {
           href="https://www.instagram.com/_shalvin____/"
           className="social_link"
         >
-          instagram
+          Instagram
         </a>
       </div>
     </div>
