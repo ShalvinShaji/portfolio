@@ -1,17 +1,30 @@
 import React from "react";
 import "./About.css";
+import JavaScriptIcon from "../../assets/javascript.svg";
+import ReactIcon from "../../assets/react.svg";
+import BootstrapIcon from "../../assets/bootstrap.svg";
+import PostgreSQLIcon from "../../assets/postgresql.svg";
+import PythonIcon from "../../assets/python.svg";
+import GoIcon from "../../assets/go.svg";
+import GitIcon from "../../assets/github.svg";
+import AWSIcon from "../../assets/aws.svg";
+import TerraformIcon from "../../assets/terraform.svg";
+import HtmlIcon from "../../assets/html.svg";
+import CssIcon from "../../assets/css.svg";
 
 const About = () => {
   const skills = [
-    "JavaScript",
-    "React",
-    "Bootstrap",
-    "PostgreSQL",
-    "Python",
-    "Go",
-    "Git",
-    "AWS Services",
-    "Terraform",
+    { name: "Html", icon: HtmlIcon },
+    { name: "JavaScript", icon: JavaScriptIcon },
+    { name: "CSS", icon: CssIcon },
+    { name: "React", icon: ReactIcon },
+    { name: "Bootstrap", icon: BootstrapIcon },
+    { name: "PostgreSQL", icon: PostgreSQLIcon },
+    { name: "Python", icon: PythonIcon },
+    { name: "Go", icon: GoIcon },
+    { name: "Git", icon: GitIcon },
+    { name: "AWS Services", icon: AWSIcon },
+    { name: "Terraform", icon: TerraformIcon },
   ];
   return (
     <div className="about-page">
@@ -38,17 +51,17 @@ const About = () => {
             problems and continuously enhancing my technical skills.
           </p>
         </div>
-        <div className="about-skills d-flex flex-column justify-content-between align-items-center">
-          <div>
-            <p>Core Competencies</p>
-          </div>
-          <div className="skills-container d-flex flex-wrap justify-content-center">
-            {skills.map((skill, index) => (
-              <div className="skill" key={index}>
-                <p className="mb-0">{skill}</p>
-              </div>
-            ))}
-          </div>
+        <div className="skills-container d-flex flex-wrap justify-content-center">
+          {skills.map((skill, index) => (
+            <div className="skill" key={index}>
+              <img
+                src={skill.icon} // Directly using the imported icon
+                alt={skill.name}
+                className="skill-icon"
+              />
+              <p className="mb-0">{skill.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
