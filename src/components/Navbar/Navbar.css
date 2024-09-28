@@ -1,11 +1,12 @@
 /* Basic Navbar Styles */
 .navbar {
   padding: 1rem;
+  background-color: #1b1b1b;
 }
 
 .logo-box {
   display: inline-block;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   font-family: "Times New Roman", Times, serif;
   /* font-weight: 400; */
   color: #c4a989 !important;
@@ -33,7 +34,7 @@
   margin: 0;
   position: absolute;
   right: 40px;
-  top: 32px; 
+  top: 32px;
   z-index: 2000; /* Ensure menu button stays on top of the fullscreen menu */
 }
 
@@ -125,7 +126,7 @@
   left: 0;
   bottom: -2px; /* Position just below the text */
   width: 100%;
-  height: 1px !important; 
+  height: 1px !important;
   background-color: #c4a989;
   transform: scaleX(0); /* Start hidden with scale */
   transform-origin: left; /* Ensure animation starts from the left */

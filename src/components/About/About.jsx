@@ -40,9 +40,9 @@ const About = () => {
         </div>
         <div className="about-skills d-flex flex-column justify-content-between align-items-center">
           <div>
-            <p>What I Excel In</p>
+            <p>Core Competencies</p>
           </div>
-          <div className="skills-container d-flex flex-wrap justify-content-center align-items-center">
+          <div className="skills-container d-flex flex-wrap justify-content-center">
             {skills.map((skill, index) => (
               <div className="skill" key={index}>
                 <p className="mb-0">{skill}</p>
