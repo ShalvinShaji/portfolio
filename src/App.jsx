@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Loader from "./components/Loader/Loader";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
-// import Skills from "./components/Skills/Skills";
+import Blog from "./components/Blog/Blog";
 // import Contact from "./components/Contact/Contact";
 
 const App = () => {
@@ -30,8 +30,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blog" element={<Blog />} />
             {/*<Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} /> */}
+             */}
           </Routes>
         </>
       )}

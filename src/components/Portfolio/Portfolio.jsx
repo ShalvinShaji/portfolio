@@ -22,42 +22,6 @@ const Portfolio = () => {
       codeLink: "https://example.com/1",
       tech_stack: ["Python", "Java"],
     },
-    {
-      title: "Content 4",
-      contentLink: "https://example.com/4",
-      codeLink: "https://example.com/1",
-      tech_stack: ["Python", "Java"],
-    },
-    {
-      title: "Content 5",
-      contentLink: "https://example.com/5",
-      codeLink: "https://example.com/1",
-      tech_stack: ["Python", "Java"],
-    },
-    {
-      title: "Content 6",
-      contentLink: "https://example.com/6",
-      codeLink: "https://example.com/1",
-      tech_stack: ["Python", "Java"],
-    },
-    {
-      title: "Content 7",
-      contentLink: "https://example.com/7",
-      codeLink: "https://example.com/1",
-      tech_stack: ["Python", "Java"],
-    },
-    {
-      title: "Content 8",
-      contentLink: "https://example.com/8",
-      codeLink: "https://example.com/1",
-      tech_stack: ["Python", "Java"],
-    },
-    {
-      title: "Content 9",
-      contentLink: "https://example.com/9",
-      codeLink: "https://example.com/1",
-      tech_stack: ["Python", "Java"],
-    },
   ];
 
   return (
