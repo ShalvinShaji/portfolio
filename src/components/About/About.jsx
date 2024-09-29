@@ -51,17 +51,24 @@ const About = () => {
             problems and continuously enhancing my technical skills.
           </p>
         </div>
-        <div className="skills-container d-flex flex-wrap justify-content-center">
-          {skills.map((skill, index) => (
-            <div className="skill" key={index}>
-              <img
-                src={skill.icon} // Directly using the imported icon
-                alt={skill.name}
-                className="skill-icon"
-              />
-              <p className="mb-0">{skill.name}</p>
-            </div>
-          ))}
+        <div>
+          <div className="d-flex justify-content-center align-items-center">
+            <h5>
+              Core<span className="highlight-colour"> Competencies</span>
+            </h5>
+          </div>
+          <div className="skills-container d-flex flex-wrap justify-content-center">
+            {skills.map((skill, index) => (
+              <div className="skill" key={index}>
+                <img
+                  src={skill.icon} // Directly using the imported icon
+                  alt={skill.name}
+                  className="skill-icon"
+                />
+                <p className="mb-0">{skill.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

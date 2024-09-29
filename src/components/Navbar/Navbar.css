@@ -34,7 +34,7 @@
   margin: 0;
   position: absolute;
   right: 40px;
-  top: 32px;
+  top: 30px;
   z-index: 2000; /* Ensure menu button stays on top of the fullscreen menu */
 }
 

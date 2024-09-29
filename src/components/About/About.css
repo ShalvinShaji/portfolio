@@ -20,6 +20,8 @@
   text-overflow: ellipsis;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
 }
 
 /* Responsive adjustments (optional) */
