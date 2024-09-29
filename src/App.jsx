@@ -6,23 +6,23 @@ import Loader from "./components/Loader/Loader";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Blog from "./components/Blog/Blog";
-// import Contact from "./components/Contact/Contact";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating a loading delay, e.g., fetching data or assets
-    const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after 2 seconds
-    }, 2000);
+    // Function to hide loader after the first render
+    const handleFirstRender = () => {
+      setLoading(false);
+    };
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    requestAnimationFrame(handleFirstRender);
   }, []);
+
   return (
     <Router>
       {loading ? (
-        <Loader /> // Show loader when loading is true
+        <Loader /> 
       ) : (
         <>
           <Navbar />
@@ -31,8 +31,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/blog" element={<Blog />} />
-            {/*<Route path="/skills" element={<Skills />} />
-             */}
+            {/*<Route path="/skills" element={<Skills />} /> */}
           </Routes>
         </>
       )}
