@@ -5,12 +5,13 @@ import HeroSocial from "../Social/HeroSocial";
 const Home = () => {
   return (
     <>
-      <div className="main-container container">
-        <div className="row">
+      <div className="main-container">
+        <div>
           {/* <div className="d-flex  flex-column justify-content-start align-items-start"> */}
           <div className="d-flex flex-column  justify-content-center align-items-center">
-            <h1 className="hero-name ">
-              Hey, I'm <span className="highlight-colour">Shalvin</span>
+            <h1 className="hero-name">
+              Hey, I'm
+              <span className="highlight-colour "> Shalvin</span>
             </h1>
             {/* <h1 className="hero-name ">
               <span className="hero-fullsto">.</span>

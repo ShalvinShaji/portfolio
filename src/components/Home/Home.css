@@ -1,4 +1,5 @@
 /* Main container styles */
+
 .main-container {
   display: flex;
   justify-content: center; /* Horizontally centers items */
@@ -11,12 +12,11 @@
 }
 
 /* Larger screens (desktops, tablets) */
-.hero-greet {
-  font-size: 5rem;
-}
+
 
 .hero-name {
   font-size: 5rem;
+  font-family: "MontserratFont", Times, serif;
 }
 .hero-role {
   font-size: 2rem;
@@ -30,7 +30,6 @@
   font-size: 1rem;
   font-weight: 500;
 }
-
 
 /* Mobile styles */
 @media (max-width: 768px) {
