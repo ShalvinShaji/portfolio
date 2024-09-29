@@ -33,6 +33,7 @@ const Navbar = () => {
         >
           <span className="menu-line top-line"></span>
           <span className="menu-line bottom-line"></span>
+          <span className="menu-line top-line"></span>
         </button>
 
         <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>

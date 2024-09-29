@@ -14,7 +14,7 @@
   font-size: 1.3rem;
 }
 .tech-stack p {
-  background-color: #f0d6b7;
+  background-color: #888888;
   color: #222;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -27,11 +27,11 @@
 }
 .contentLink {
   text-decoration: none;
-  color: #f0d6b7;
+  color: #888888;
 }
 .codeLink {
   text-decoration: none;
-  color: #c4a989;
+  color: #4444444f;
 }
 
 .codeLink:hover,

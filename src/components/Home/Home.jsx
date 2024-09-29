@@ -10,7 +10,7 @@ const Home = () => {
           {/* <div className="d-flex  flex-column justify-content-start align-items-start"> */}
           <div className="d-flex flex-column  justify-content-center align-items-center">
             <h1 className="hero-name ">
-              Hey, I'm <span className="hero-name-color">Shalvin</span>
+              Hey, I'm <span className="highlight-colour">Shalvin</span>
             </h1>
             {/* <h1 className="hero-name ">
               <span className="hero-fullsto">.</span>

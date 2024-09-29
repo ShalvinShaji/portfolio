@@ -1,17 +1,18 @@
 body,
 html,
 #root {
-  background-color: #1b1b1b !important;
+  background-color: #191919 !important;
   color: white; /* Optional: To ensure the text is readable on a dark background */
+  font-family: "Times New Roman", Times, serif;
 }
 
 ::selection {
-  background-color: #f0d6b7;
+  background-color: #cdb565;
   color: #222;
 }
 
 .highlight-colour {
-  color: #f0d6b7;
+  color: #cdb565;
 }
 
 .page-heading {
