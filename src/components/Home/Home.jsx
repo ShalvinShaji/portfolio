@@ -23,7 +23,6 @@ const Home = () => {
               the tech world, one line at a time.
             </p>
           </div>
-          <p className="hero-social mb-0">You can find me here :</p>
           <HeroSocial />
         </div>
       </div>
