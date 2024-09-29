@@ -29,17 +29,18 @@ body,
 html,
 #root {
   background-color: #191919 !important;
-  color: white;
+  color: #dddbcb !important;
   font-family: "MontserratFont", Times, serif;
 }
 
 ::selection {
-  background-color: #cdb565;
-  color: #222;
+  background-color: #a9032c;
+  color: #dddbcb;
 }
 
 .highlight-colour {
-  color: #cdb565;
+  color: #a9032c;
+  font-weight: 900;
 }
 
 .page-heading {

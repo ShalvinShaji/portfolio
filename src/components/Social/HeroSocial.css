@@ -14,24 +14,19 @@
   text-decoration: none;
   font-size: 1rem;
   color: #999;
-  /* transform: rotate(270deg); */
   transition-duration: 0.5s;
 }
 
 /* Change on hover */
 .social_link:hover {
-  /* color: #90209e;  */
-  transform: translateX(3px);
-  color: #c4a989;
-
-  /* Move the link 3px up while keeping the rotation */
+  color: #fff;
 }
 
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
   .social_link {
-    margin: 2rem 0.5rem; /* Reduce margin */
-    font-size: 0.9rem; /* Adjust font size */
+    margin: 2rem 0.5rem;
+    font-size: 0.9rem;
   }
 }
 

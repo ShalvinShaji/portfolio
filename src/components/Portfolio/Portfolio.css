@@ -7,15 +7,15 @@
   align-items: center;
   color: #fff;
   font-size: 18px;
-  border-radius: 8px; /* Add some rounded corners */
+  border-radius: 15px; /* Add some rounded corners */
 }
 
 .content-title {
   font-size: 1.3rem;
 }
 .tech-stack p {
-  background-color: #888888;
-  color: #222;
+  background-color: #333;
+  color: #dddbcb;
   border-radius: 20px;
   font-size: 0.8rem;
   margin-right: 0.5rem;
@@ -27,14 +27,17 @@
 }
 .contentLink {
   text-decoration: none;
-  color: #888888;
+  color: #dddbcb;
+  transition-duration: 0.4s;
 }
 .codeLink {
   text-decoration: none;
-  color: #4444444f;
+  color: #dddbcb;
+  font-size: 1rem;
+  transition-duration: 0.4s;
 }
 
 .codeLink:hover,
 .contentLink:hover {
-  text-decoration: underline;
+  color: #fff;
 }

@@ -33,8 +33,14 @@ const About = () => {
           About <span className="highlight-colour">Me</span>
         </h1>
       </div>
-      <div className="about-content d-flex flex-column flex-md-row justify-items-center align-items-center">
+      <div className="about-content d-flex flex-column flex-md-row justify-items-center justify-items-md-start  align-items-center">
         <div className="about-desc">
+          {/* <div className="d-flex justify-content-sm-start justify-content-center align-items-center">
+            <h5>
+              Life in Progress :
+              <span className="highlight-colour"> The Art of Becoming</span>
+            </h5>
+          </div> */}
           <p>
             Hey, I'am Shalvin Shaji, a Software Engineer at Tata Consultancy
             Services.
@@ -51,24 +57,18 @@ const About = () => {
             problems and continuously enhancing my technical skills.
           </p>
         </div>
-        <div>
-          <div className="d-flex justify-content-center align-items-center">
-            <h5>
-              Core<span className="highlight-colour"> Competencies</span>
-            </h5>
-          </div>
-          <div className="skills-container d-flex flex-wrap justify-content-lg-start justify-content-center align-items-center  ">
-            {skills.map((skill, index) => (
-              <div className="skill" key={index}>
-                <img
-                  src={skill.icon} // Directly using the imported icon
-                  alt={skill.name}
-                  className="skill-icon"
-                />
-                <p className="mb-0">{skill.name}</p>
-              </div>
-            ))}
-          </div>
+      </div>
+      <div>
+        <div className="skills-container d-flex flex-wrap justify-content-xl-start justify-content-center align-items-center  ">
+          {skills.map((skill, index) => (
+            <div className="skill" key={index}>
+              <img
+                src={skill.icon} // Directly using the imported icon
+                alt={skill.name}
+                className="skill-icon"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

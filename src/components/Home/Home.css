@@ -8,11 +8,9 @@
     100vh - 56px
   ); /* Adjust this value based on the actual height of your navbar */
   text-align: center; /* Center-align text */
-  color: #999;
 }
 
 /* Larger screens (desktops, tablets) */
-
 
 .hero-name {
   font-size: 5rem;

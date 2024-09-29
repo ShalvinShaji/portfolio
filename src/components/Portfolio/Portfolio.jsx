@@ -57,7 +57,7 @@ const Portfolio = () => {
                           rel="noopener noreferrer"
                           className="codeLink"
                         >
-                          Code
+                          code
                         </a>
                       </div>
                     </div>
