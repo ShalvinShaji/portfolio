@@ -1,9 +1,36 @@
+@font-face {
+  font-family: "MontserratItalicFont";
+  src: url("./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratFont";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LoraItalicFont";
+  src: url("./assets/fonts/Lora-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LoraFont";
+  src: url("./assets/fonts/Lora-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 html,
 #root {
   background-color: #191919 !important;
-  color: white; /* Optional: To ensure the text is readable on a dark background */
-  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-family: "MontserratFont", Times, serif;
 }
 
 ::selection {

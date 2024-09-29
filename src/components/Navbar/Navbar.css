@@ -77,7 +77,7 @@
   opacity: 0; /* Initially hidden */
   pointer-events: none; /* Prevent interactions */
   transition: opacity 0.3s ease; /* Smooth opacity transition */
-  background-color: #181818;
+  background-color: #191919;
 }
 
 /* Show the menu */
@@ -114,7 +114,6 @@
   text-decoration: none;
   position: relative; /* Needed for the pseudo-element */
   overflow: hidden; /* Hide the pseudo-element overflow */
-  font-family: "Times New Roman", Times, serif;
   font-weight: normal;
 }
 
