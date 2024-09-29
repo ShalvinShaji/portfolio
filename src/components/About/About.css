@@ -9,6 +9,12 @@
   width: 40vw; /* Default width for each section on larger devices */
   padding: 20px;
 }
+.about-content {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 
 .about-desc {
   width: 100%;

@@ -33,7 +33,7 @@ const About = () => {
           About <span className="highlight-colour">Me</span>
         </h1>
       </div>
-      <div className="page-content d-flex flex-column flex-md-row justify-items-center align-items-center">
+      <div className="about-content d-flex flex-column flex-md-row justify-items-center align-items-center">
         <div className="about-desc">
           <p>
             Hey, I'am Shalvin Shaji, a Software Engineer at Tata Consultancy
@@ -57,7 +57,7 @@ const About = () => {
               Core<span className="highlight-colour"> Competencies</span>
             </h5>
           </div>
-          <div className="skills-container d-flex flex-wrap justify-content-center">
+          <div className="skills-container d-flex flex-wrap justify-content-lg-start justify-content-center align-items-center  ">
             {skills.map((skill, index) => (
               <div className="skill" key={index}>
                 <img
