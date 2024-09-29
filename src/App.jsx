@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Loader from "./components/Loader/Loader";
 import About from "./components/About/About";
+import Portfolio from "./components/Portfolio/Portfolio";
 // import Skills from "./components/Skills/Skills";
-// import Portfolio from "./components/Portfolio/Portfolio";
 // import Contact from "./components/Contact/Contact";
 
 const App = () => {
@@ -29,8 +29,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/*<Route path="/skills" element={<Skills />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            {/*<Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </>

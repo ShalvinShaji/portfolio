@@ -1,0 +1,40 @@
+.content-box {
+  background-color: #222; /* Set the background color */
+  width: 100%; /* Ensure the box takes up the full column width */
+  height: 250px; /* Fixed height for uniform boxes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px; /* Add some rounded corners */
+}
+
+.content-title {
+  font-size: 1.3rem;
+}
+.tech-stack p {
+  background-color: #f0d6b7;
+  color: #222;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.work-desc p {
+  font-size: 1rem;
+  margin: 1.2rem 0;
+}
+.contentLink {
+  text-decoration: none;
+  color: #f0d6b7;
+}
+.codeLink {
+  text-decoration: none;
+  color: #c4a989;
+}
+
+.codeLink:hover,
+.contentLink:hover {
+  text-decoration: underline;
+}

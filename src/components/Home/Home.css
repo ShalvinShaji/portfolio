@@ -7,7 +7,6 @@
     100vh - 56px
   ); /* Adjust this value based on the actual height of your navbar */
   text-align: center; /* Center-align text */
-  padding: 1rem; /* Optional padding */
   color: #999;
 }
 
@@ -38,7 +37,7 @@
 }
 
 .hero-name-color {
-  color: #c4a989;
+  color: #f0d6b7;
 }
 
 /* Mobile styles */
@@ -54,7 +53,7 @@
     font-size: 2.5rem;
   }
   .hero-desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   /* Adjust padding on smaller screens */
