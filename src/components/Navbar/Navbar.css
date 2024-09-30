@@ -32,7 +32,7 @@
   height: 10px;
   padding: 0;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
   right: 40px;
   top: 30px;
   z-index: 2000; /* Ensure menu button stays on top of the fullscreen menu */
@@ -44,7 +44,7 @@
   width: 100%;
   height: 2px;
   /* background-color: #444444; */
-  background-color: #dddbcb;
+  background-color: #333;
 
   transition: all 0.3s ease;
   border-radius: 7px;
