@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>
           {showMenuItems && (
             <ul className="fullscreen-menu-list">
-              {["Home", "About", "Portfolio", "Blog"].map((item, index) => (
+              {["Home", "Portfolio", "Blog"].map((item, index) => (
                 <li
                   className="fullscreen-menu-item"
                   style={{ animationDelay: `${index * 0.1}s` }} // Delay based on index
