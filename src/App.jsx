@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
+import Home from "./pages/Home/Home";
 import Loader from "./components/Loader/Loader";
 import About from "./components/About/About";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Blog from "./components/Blog/Blog";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Blog from "./pages/Blog/Blog";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,7 +22,7 @@ const App = () => {
   return (
     <Router>
       {loading ? (
-        <Loader /> 
+        <Loader />
       ) : (
         <>
           <Navbar />
