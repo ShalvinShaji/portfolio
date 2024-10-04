@@ -37,7 +37,7 @@ const Portfolio = () => {
               <div className="row">
                 {portfolio_contents.map((content, index) => (
                   <div
-                    className="col-12 col-lg-6  p-1 d-flex  justify-content-start align-items-center"
+                    className="col-12 col-lg-6 mb-1 mb-lg-0 p-0 p-lg-1 d-flex  justify-content-start align-items-center"
                     key={index}
                   >
                     <div className="content-box p-4 ">
