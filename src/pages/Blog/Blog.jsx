@@ -5,8 +5,8 @@ const Blog = () => {
   return (
     <div className="about-page container">
       <div className="row h-90">
-        <div className="page-heading">
-          <h1>
+        <div className="page-heading text-center">
+          <h1 className="">
             My <span className="highlight-colour">Blogs</span>
           </h1>
         </div>
