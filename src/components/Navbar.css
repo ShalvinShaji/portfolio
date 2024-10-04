@@ -1,16 +1,21 @@
-/* Basic Navbar Styles */
-
-
+.navbar {
+  background-color: #191919;
+}
 .logo-box {
   display: inline-block;
-  font-size: 1.7rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 600;
+  font-size: 0.5rem;
+  font-weight: 200;
   color: #dddbcb !important;
-  padding: 5px 12px; /* Padding to create the box */
+  padding: 5px 12px;
   text-align: center;
-  line-height: 1; /* Make sure the text is centered vertically */
-  z-index: 2000; /* Ensure menu button stays on top of the fullscreen menu */
+  line-height: 1;
+  z-index: 2000;
+}
+
+@media (max-width: 768px) {
+  .logo-box {
+    padding: 0;
+  }
 }
 
 .logo-box:hover {
