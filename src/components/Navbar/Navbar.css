@@ -1,15 +1,12 @@
 /* Basic Navbar Styles */
-.navbar {
-  padding: 1rem;
-  background-color: #191919 !important;
-}
+
 
 .logo-box {
   display: inline-block;
   font-size: 1.7rem;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
-  color: #444444 !important;
+  color: #dddbcb !important;
   padding: 5px 12px; /* Padding to create the box */
   text-align: center;
   line-height: 1; /* Make sure the text is centered vertically */

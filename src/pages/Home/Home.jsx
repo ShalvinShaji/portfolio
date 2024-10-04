@@ -1,33 +1,24 @@
 import React from "react";
 import "./Home.css";
-import HeroSocial from "../Social/HeroSocial";
 
 const Home = () => {
   return (
-    <>
-      <div className="main-container">
+    <main className="container home_page">
+      <div className="row">
+        <div className="hero_intro col-12">
+          <h1>
+            Hey, I'm
+            <span className="highlight-colour hero_name"> Shalvin</span>
+          </h1>
+        </div>
         <div>
-          {/* <div className="d-flex  flex-column justify-content-start align-items-start"> */}
-          <div className="d-flex flex-column  justify-content-center align-items-center">
-            <h1 className="hero-name">
-              Hey, I'm
-              <span className="highlight-colour "> Shalvin</span>
-            </h1>
-            {/* <h1 className="hero-name ">
-              <span className="hero-fullsto">.</span>
-            </h1> */}
-          </div>
-          {/* <p className="hero-role">Front-End Developer</p> */}
-          <div>
-            <p className="hero-desc">
-              A web developer and database administrator on a journey through
-              the tech world, one line at a time.
-            </p>
-          </div>
-          <HeroSocial />
+          <p className="hero_desc col-12">
+            A web developer and database administrator on a journey through the
+            tech world, one line at a time.
+          </p>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

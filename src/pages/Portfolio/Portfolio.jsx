@@ -1,6 +1,5 @@
 import React from "react";
 import "./Portfolio.css";
-import GitIcon from "../../assets/github.svg";
 
 const Portfolio = () => {
   const portfolio_contents = [

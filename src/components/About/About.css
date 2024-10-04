@@ -1,58 +1,17 @@
-.about-page {
-  height: calc(100vh - 70px);
-  padding-top: 20px;
-}
-
-.about-desc,
-.about-skills {
-  width: 40vw; /* Default width for each section on larger devices */
-  padding: 20px;
-}
-.about-content {
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.about-desc {
-  width: 100%;
-  margin: auto;
-  padding: 1rem;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  white-space: normal;
-  line-height: 1.5;
-}
-
-/* Responsive adjustments (optional) */
-@media (max-width: 768px) {
-  .about-desc {
-    max-width: 100%; /* Allow full width on smaller screens */
-  }
-}
-
-.about-desc p,
-.about-skills p {
-  margin-bottom: 1rem; /* Space between paragraphs */
-}
-.about-skills-heading {
-  font-size: 1.5rem;
-}
-
 .skill {
   margin: 10px;
   text-align: center;
   padding: 10px;
+  transition-duration: 0.4s;
+}
+.skill:hover {
+  transform: scale(1.2);
 }
 
 .skill-icon {
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
-  margin-bottom: 5px; /* Space between icon and text */
+  width: 50px;
+  height: 50px; 
+  margin-bottom: 5px; 
 }
 
 /* Responsive styles for medium and small devices */
