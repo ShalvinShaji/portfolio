@@ -1,8 +1,8 @@
 import React from "react";
 import "./HeroSocial.css";
-import InstagramIcon from "../assets/svg/InstagramIcon.svg";
-import LinkedInIcon from "../assets/svg/LinkedInIcon.svg";
-import GitHubIcon from "../assets/svg/GitHubIcon.svg";
+import InstagramIcon from "../assets/svg/instagramIcon.svg";
+import LinkedInIcon from "../assets/svg/linkedinIcon.svg";
+import GitHubIcon from "../assets/svg/githubIcon.svg";
 
 const HeroSocial = () => {
   const socialLinks = [
