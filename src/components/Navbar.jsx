@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar fixed-top">
       <div className="container">
         <Link to="/" className="navbar-brand logo-box">
-          Shalvin.
+          Sha.
         </Link>
 
         {/* <button
