@@ -12,7 +12,7 @@ const MainLayout = () => {
       <Navbar />
       <Home />
       <About />
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/* <Blogs /> */}
       <Footer />
     </div>
