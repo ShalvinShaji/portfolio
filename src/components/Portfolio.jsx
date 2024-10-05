@@ -22,6 +22,12 @@ const Portfolio = () => {
       codeLink: "https://example.com/1",
       tech_stack: ["Python", "Java"],
     },
+    {
+      title: "Content 3",
+      contentLink: "https://example.com/3",
+      codeLink: "https://example.com/1",
+      tech_stack: ["Python", "Java"],
+    },
   ];
   return (
     <section id="portfolio" className=" d-flex align-items-center ">
@@ -37,7 +43,6 @@ const Portfolio = () => {
               <div className="row">
                 {portfolio_contents.map((content, index) => (
                   <div
-
                     className="col-12 col-lg-6 mb-1 mb-lg-0 p-0 p-lg-1 d-flex  justify-content-start align-items-center"
                     key={index}
                   >

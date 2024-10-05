@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
     <nav className="navbar fixed-top">
       <div className="container">
         <Link to="/" className="navbar-brand logo-box">
-          Sha.
+          <img src={logo} alt="" />
         </Link>
 
         {/* <button
