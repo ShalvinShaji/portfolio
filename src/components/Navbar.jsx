@@ -21,10 +21,10 @@ const Navbar = () => {
     <nav className="navbar fixed-top">
       <div className="container">
         <Link to="/" className="navbar-brand logo-box">
-          S
+          Shalvin.
         </Link>
 
-        <button
+        {/* <button
           className={`custom-menu-button ${isMenuOpen ? "open" : ""}`}
           type="button"
           onClick={toggleMenu}
@@ -34,7 +34,7 @@ const Navbar = () => {
           <span className="menu-line top-line"></span>
           <span className="menu-line bottom-line"></span>
           <span className="menu-line top-line"></span>
-        </button>
+        </button> */}
 
         <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>
           {showMenuItems && (

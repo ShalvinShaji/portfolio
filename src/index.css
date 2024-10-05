@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MontserratRegularFont";
-  src: url("./assets/fonts/Montserrat_Alternates//MontserratAlternates-Regular.ttf")
+  src: url("./assets/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -14,8 +14,7 @@
 }
 
 body,
-html,
-#root {
+html {
   background-color: #191919 !important;
   color: #dddbcb !important;
   font-family: "MontserratRegularFont", Times, serif;
@@ -28,25 +27,41 @@ html,
 
 .highlight-colour {
   color: #a9032c;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 900;
   font-family: "MontserratBoldFont";
 }
 
 @media (max-width: 1024px) {
   .highlight-colour {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 768px) {
   .highlight-colour {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 480px) {
   .highlight-colour {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+  }
+}
+
+.custom-container {
+  max-width: 60vw;
+  margin-top: 2rem;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .custom-container {
+    max-width: 100vw;
   }
 }
