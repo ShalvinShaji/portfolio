@@ -18,7 +18,7 @@ const HeroSocial = () => {
     },
     {
       icon: InstagramIcon,
-      url: "https://www.instagram.com/_shalvin____/",
+      url: "http://www.instagram.com/shalv1n________",
       label: "Instagram",
     },
   ];
