@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import "./Navbar.css";
@@ -6,6 +6,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [showMenuItems, setShowMenuItems] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     if (!isMenuOpen) {
@@ -18,8 +19,24 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar fixed-top">
+    <nav className={`navbar fixed-top ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <Link to="/" className="navbar-brand logo-box">
           <img src={logo} alt="" />
