@@ -12,6 +12,17 @@
   z-index: 2000;
 }
 
+.logo-box img {
+  max-height: 40px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .logo-box {
     padding: 0;

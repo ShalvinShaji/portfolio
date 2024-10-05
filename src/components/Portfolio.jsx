@@ -1,23 +1,31 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Link from "../assets/svg/Link.svg";
+import Code from "../assets/svg/code.svg";
 import "./Portfolio.css";
 
 const Portfolio = () => {
   const portfolio_contents = [
     {
-      title: "Contentjhghgkgkhkkhlljl 1",
+      title: "Project 1",
       contentLink: "https://example.com/1",
       codeLink: "https://example.com/1",
       tech_stack: ["Python", "Java"],
     },
     {
-      title: "Content 2",
+      title: "Project 2",
       contentLink: "https://example.com/2",
       codeLink: "https://example.com/1",
       tech_stack: ["Python", "Java"],
     },
     {
-      title: "Content 3",
+      title: "Project 3",
+      contentLink: "https://example.com/3",
+      codeLink: "https://example.com/1",
+      tech_stack: ["Python", "Java"],
+    },
+    {
+      title: "Project 4",
       contentLink: "https://example.com/3",
       codeLink: "https://example.com/1",
       tech_stack: ["Python", "Java"],
@@ -37,31 +45,38 @@ const Portfolio = () => {
               <div className="row">
                 {portfolio_contents.map((content, index) => (
                   <div
-
                     className="col-12 col-lg-6 mb-1 mb-lg-0 p-0 p-lg-1 d-flex  justify-content-start align-items-center"
                     key={index}
                   >
                     <div className="content-box p-4 ">
                       <div className="d-flex flex-column  justify-content-center align-items-start">
                         <div className="d-flex flex-column  justify-content-center align-items-start">
-                          <a
-                            href={content.contentLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className=" contentLink"
-                          >
-                            <p className="mb-0 content-title">
-                              {content.title}
-                            </p>
-                          </a>
-                          <div>
+                          <p className=" content-title">{content.title}</p>
+
+                          <div className="d-flex jusify-content-center align-items-center">
                             <a
                               href={content.codeLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="codeLink"
+                              className="codeLink me-3"
                             >
-                              code
+                              <img
+                                src={Link}
+                                alt="Project link"
+                                className="link_icon"
+                              />
+                            </a>
+                            <a
+                              href={content.contentLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className=" contentLink"
+                            >
+                              <img
+                                src={Code}
+                                alt="Code link"
+                                className="link_icon"
+                              />
                             </a>
                           </div>
                         </div>
