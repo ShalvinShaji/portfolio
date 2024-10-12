@@ -9,7 +9,7 @@ const Footer = () => {
         <Row>
           <Col className="text-center">
             <small>
-              &copy; 2024. Designed and Developed by Me with{" "}
+              &copy; {new Date().getFullYear()}. Designed and Developed by Me with{" "}
               <span className="heart_color">&#10084;</span>
             </small>
           </Col>
