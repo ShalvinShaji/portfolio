@@ -9,23 +9,27 @@ import GoIcon from "../assets/svg/go.svg";
 import GitIcon from "../assets/svg/github.svg";
 import AWSIcon from "../assets/svg/aws.svg";
 import TerraformIcon from "../assets/svg/terraform.svg";
-import HtmlIcon from "../assets/svg/html.svg";
+// import HtmlIcon from "../assets/svg/html.svg";
 import CssIcon from "../assets/svg/css.svg";
+import TailwindcssIcon from "../assets/svg/tailwindcss.svg";
+import ReduxIcon from "../assets/svg/redux.svg";
 import "./About.css";
 
 const About = () => {
   const skills = [
-    { name: "Html", icon: HtmlIcon },
+    // { name: "Html", icon: HtmlIcon },
+    { name: "React", icon: ReactIcon },
+    { name: "Redux", icon: ReduxIcon },
     { name: "JavaScript", icon: JavaScriptIcon },
     { name: "CSS", icon: CssIcon },
-    { name: "React", icon: ReactIcon },
+    { name: "Tailwind CSS", icon: TailwindcssIcon },
     { name: "Bootstrap", icon: BootstrapIcon },
-    { name: "PostgreSQL", icon: PostgreSQLIcon },
     { name: "Python", icon: PythonIcon },
     { name: "Go", icon: GoIcon },
-    { name: "Git", icon: GitIcon },
+    { name: "PostgreSQL", icon: PostgreSQLIcon },
     { name: "AWS Services", icon: AWSIcon },
     { name: "Terraform", icon: TerraformIcon },
+    { name: "Git", icon: GitIcon },
   ];
   return (
     <section id="about" className=" d-flex align-items-center ">
