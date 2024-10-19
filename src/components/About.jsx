@@ -1,18 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import JavaScriptIcon from "../assets/svg/javascript.svg";
-import ReactIcon from "../assets/svg/react.svg";
-import BootstrapIcon from "../assets/svg/bootstrap.svg";
-import PostgreSQLIcon from "../assets/svg/postgresql.svg";
-import PythonIcon from "../assets/svg/python.svg";
-import GoIcon from "../assets/svg/go.svg";
-import GitIcon from "../assets/svg/github.svg";
-import AWSIcon from "../assets/svg/aws.svg";
-import TerraformIcon from "../assets/svg/terraform.svg";
-// import HtmlIcon from "../assets/svg/html.svg";
-import CssIcon from "../assets/svg/css.svg";
-import TailwindcssIcon from "../assets/svg/tailwindcss.svg";
-import ReduxIcon from "../assets/svg/redux.svg";
+import {
+  HtmlIcon,
+  ReactIcon,
+  ReduxIcon,
+  JavaScriptIcon,
+  CssIcon,
+  TailwindcssIcon,
+  BootstrapIcon,
+  PythonIcon,
+  GoIcon,
+  PostgreSQLIcon,
+  AWSIcon,
+  TerraformIcon,
+  GitIcon,
+} from "../utils";
 import "./About.css";
 
 const About = () => {

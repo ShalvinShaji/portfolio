@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/logo.png";
+import { Logo } from "../utils";
+// import { nav_items } from "../constants";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -39,7 +40,7 @@ const Navbar = () => {
     <nav className={`navbar fixed-top ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <Link to="/" className="navbar-brand logo-box">
-          <img src={logo} alt="" />
+          <img src={Logo} alt="" />
         </Link>
 
         {/* <button
@@ -54,10 +55,10 @@ const Navbar = () => {
           <span className="menu-line top-line"></span>
         </button> */}
 
-        <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>
+        {/* <div className={`fullscreen-menu ${isMenuOpen ? "show" : ""}`}>
           {showMenuItems && (
             <ul className="fullscreen-menu-list">
-              {["Home", "Portfolio", "Blog"].map((item, index) => (
+              {nav_items.map((item, index) => (
                 <li
                   className="fullscreen-menu-item"
                   style={{ animationDelay: `${index * 0.1}s` }} // Delay based on index
@@ -78,7 +79,7 @@ const Navbar = () => {
               ))}
             </ul>
           )}
-        </div>
+        </div> */}
       </div>
     </nav>
   );
