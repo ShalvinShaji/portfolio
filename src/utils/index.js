@@ -14,4 +14,5 @@ export { default as ReduxIcon } from "/assets/svg/redux.svg";
 export { default as InstagramIcon } from "/assets/svg/InstagramIcon.svg";
 export { default as LinkedInIcon } from "/assets/svg/LinkedInIcon.svg";
 export { default as GitHubIcon } from "/assets/svg/GitHubIcon.svg";
+export { default as Logo } from "/assets/svg/logo.svg";
 export { default as LinkIcon } from "/assets/svg/Link.svg";
