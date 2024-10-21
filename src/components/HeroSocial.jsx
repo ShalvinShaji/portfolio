@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "./HeroSocial.css";
 import { LinkedInIcon, GitHubIcon, InstagramIcon } from "../utils";
 
@@ -21,10 +22,26 @@ const HeroSocial = () => {
     },
   ];
 
+  const iconsRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      iconsRef.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out",
+      }
+    );
+  }, []);
+
   return (
-    <div className="hero-social d-flex justify-content-start align-items-center ">
+    <div className="hero-social d-flex justify-content-start align-items-center">
       {socialLinks.map((social, index) => (
-        <div key={index} className="">
+        <div key={index} ref={(el) => (iconsRef.current[index] = el)}>
           <a
             href={social.url}
             className="social_link"

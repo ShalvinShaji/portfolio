@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { gsap } from "gsap";
 import {
   HtmlIcon,
   ReactIcon,
@@ -19,7 +20,6 @@ import "./About.css";
 
 const About = () => {
   const skills = [
-    // { name: "Html", icon: HtmlIcon },
     { name: "React", icon: ReactIcon },
     { name: "Redux", icon: ReduxIcon },
     { name: "JavaScript", icon: JavaScriptIcon },
@@ -33,6 +33,36 @@ const About = () => {
     { name: "Terraform", icon: TerraformIcon },
     { name: "Git", icon: GitIcon },
   ];
+
+  const skillsRef = useRef([]);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".skills-container",
+        start: "top 80%", 
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    tl.fromTo(
+      skillsRef.current,
+      { opacity: 0, scale: 1 }, // Initial state of the skill icons
+      {
+        opacity: 1,
+        scale: 1, // Final state
+        duration: 0.5,
+        ease: "power2.out",
+        stagger: 0.1,
+      }
+    );
+
+    // Clean up on unmount
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
   return (
     <section id="about" className=" d-flex align-items-center ">
       <Container className="custom-container">
@@ -65,7 +95,11 @@ const About = () => {
               <div className="col-lg-6">
                 <div className="skills-container d-flex flex-wrap justify-content-xl-start justify-content-center align-items-center">
                   {skills.map((skill, index) => (
-                    <div className="skill" key={index}>
+                    <div
+                      className="skill"
+                      key={index}
+                      ref={(el) => (skillsRef.current[index] = el)} // Assign each skill element to the array
+                    >
                       <img
                         src={skill.icon}
                         alt={skill.name}
