@@ -12,33 +12,31 @@ const Portfolio = () => {
   const boxesRef = useRef([]);
 
   useEffect(() => {
-    // GSAP animation for each content box
     boxesRef.current.forEach((box, index) => {
       gsap.fromTo(
         box,
-        { opacity: 0, y: 50 }, // Initial state: hidden and moved down slightly
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
-          y: 0,
+          y: 0, //
           scrollTrigger: {
             trigger: box,
             start: "top 80%",
-            toggleActions: "play none none reverse",
-            // once: true,
+            once: true,
           },
-          delay: index * 0.2, // Sequential delay for each box
+          delay: index * 0.2,
         }
       );
     });
 
-    // Cleanup function to kill all ScrollTriggers
+    // Clean up: remove all ScrollTriggers on unmount
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
-    <section id="portfolio" className=" d-flex align-items-center ">
+    <section id="portfolio" className="d-flex align-items-center">
       <Container className="custom-container">
         <Row>
           <Col>
@@ -53,7 +51,7 @@ const Portfolio = () => {
                   <div
                     className="col-12 col-lg-6 mb-2 mb-lg-0 p-0 p-lg-1 d-flex justify-content-start align-items-center"
                     key={index}
-                    ref={(el) => (boxesRef.current[index] = el)} // Add reference to each box
+                    ref={(el) => (boxesRef.current[index] = el)} // Added reference to each box
                   >
                     <div className="content-box p-4">
                       <div className="d-flex flex-column justify-content-center align-items-start">
