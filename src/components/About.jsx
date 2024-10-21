@@ -40,7 +40,7 @@ const About = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".skills-container",
-        start: "top 80%", // Adjust when the animation should start
+        start: "top 80%", 
         toggleActions: "play none none reverse",
       },
     });
@@ -53,7 +53,7 @@ const About = () => {
         scale: 1, // Final state
         duration: 0.5,
         ease: "power2.out",
-        stagger: 0.3,
+        stagger: 0.1,
       }
     );
 
