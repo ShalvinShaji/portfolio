@@ -16,3 +16,5 @@ export { default as LinkedInIcon } from "/assets/svg/LinkedInIcon.svg";
 export { default as GitHubIcon } from "/assets/svg/GitHubIcon.svg";
 export { default as Logo } from "/assets/svg/logo.svg";
 export { default as LinkIcon } from "/assets/svg/Link.svg";
+export { default as NextjsIcon } from "/assets/svg/nextjs.svg";
+
