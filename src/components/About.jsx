@@ -14,12 +14,13 @@ import {
   PostgreSQLIcon,
   AWSIcon,
   TerraformIcon,
-  GitIcon,
+  GitIcon, NextjsIcon,
 } from "../utils";
 import "./About.css";
 
 const About = () => {
   const skills = [
+    {name : "Next JS",icon:NextjsIcon},
     { name: "React", icon: ReactIcon },
     { name: "Redux", icon: ReduxIcon },
     { name: "JavaScript", icon: JavaScriptIcon },

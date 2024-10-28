@@ -1,13 +1,13 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import HeroSocial from "./HeroSocial";
 
 const Home = () => {
+
   return (
     <section
       id="home"
-      className="d-flex align-items-center justify-content-center  "
+      className="d-flex align-items-center justify-content-center mt-5 "
     >
       <Container className="custom-container">
         <Row>
