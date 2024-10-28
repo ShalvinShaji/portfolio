@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
-      <div className="mt-5">
+      <div >
         <Routes>
           <Route path="/" element={<MainLayout />} />
         </Routes>
