@@ -14,7 +14,7 @@ import {
   PostgreSQLIcon,
   AWSIcon,
   TerraformIcon,
-  GitIcon, NextjsIcon,
+  GitIcon, NextjsIcon, TypeScript,
 } from "../utils";
 import "./About.css";
 
@@ -22,7 +22,8 @@ const About = () => {
   const skills = [
     {name : "Next JS",icon:NextjsIcon},
     { name: "React", icon: ReactIcon },
-    { name: "Redux", icon: ReduxIcon },
+    // { name: "Redux", icon: ReduxIcon },
+    { name: "Typescript", icon: TypeScript },
     { name: "JavaScript", icon: JavaScriptIcon },
     { name: "CSS", icon: CssIcon },
     { name: "Tailwind CSS", icon: TailwindcssIcon },
@@ -37,32 +38,33 @@ const About = () => {
 
   const skillsRef = useRef([]);
 
-  useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".skills-container",
-        start: "top 80%", 
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    tl.fromTo(
-      skillsRef.current,
-      { opacity: 0, scale: 1 }, // Initial state of the skill icons
-      {
-        opacity: 1,
-        scale: 1, // Final state
-        duration: 0.5,
-        ease: "power2.out",
-        stagger: 0.1,
-      }
-    );
-
-    // Clean up on unmount
-    return () => {
-      tl.kill();
-    };
-  }, []);
+  // useEffect(() => {
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".skills-container",
+  //       start: "top 80%",
+  //       toggleActions: "play none none reverse",
+  //       once: true,
+  //     },
+  //   });
+  //
+  //   tl.fromTo(
+  //     skillsRef.current,
+  //     { opacity: 0, scale: 1 }, // Initial state of the skill icons
+  //     {
+  //       opacity: 1,
+  //       scale: 1, // Final state
+  //       duration: 0.5,
+  //       ease: "power2.out",
+  //       stagger: 0.1,
+  //     }
+  //   );
+  //
+  //   // Clean up on unmount
+  //   return () => {
+  //     tl.kill();
+  //   };
+  // }, []);
 
   return (
     <section id="about" className=" d-flex align-items-center ">

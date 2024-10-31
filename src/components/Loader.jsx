@@ -2,8 +2,7 @@ import "./Loader.css";
 
 const Loader = () => {
     return (
-            <span className="loader"></span>
-    );
+        <div className="loader"></div>);
 };
 
 export default Loader;
