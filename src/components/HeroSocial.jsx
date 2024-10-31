@@ -23,20 +23,20 @@ const HeroSocial = () => {
   ];
 
   const iconsRef = useRef([]);
-
-  useEffect(() => {
-    gsap.fromTo(
-      iconsRef.current,
-      { opacity: 0, y: 20 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power3.out",
-      }
-    );
-  }, []);
+  //
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     iconsRef.current,
+  //     { opacity: 0, y: 20 },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 0.8,
+  //       stagger: 0.2,
+  //       ease: "power3.out",
+  //     }
+  //   );
+  // }, []);
 
   return (
     <div className="hero-social d-flex justify-content-start align-items-center">
