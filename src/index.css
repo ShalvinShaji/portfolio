@@ -5,6 +5,7 @@
     format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "MontserratBoldFont";
@@ -12,6 +13,7 @@
     format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body,
