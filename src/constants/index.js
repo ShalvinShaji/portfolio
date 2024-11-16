@@ -15,14 +15,14 @@ export const portfolio_contents = [
       "An admin page for a hospital web app to manage all aspects of the client-facing application.",
     tech_stack: ["React", "Bootsrap"],
   },
-  {
-    title: "ToDone",
-    contentLink: "https://github.com/ShalvinShaji/ToDone",
-    codeLink: "https://github.com/ShalvinShaji/ToDone",
-    work_Desc:
-      "Todo application using React for the frontend and Go with the Gin framework for the backend.",
-    tech_stack: ["React", "Go", "Gin", "MongoDB", "Tailwind CSS"],
-  },
+  // {
+  //   title: "ToDone",
+  //   contentLink: "https://github.com/ShalvinShaji/ToDone",
+  //   codeLink: "https://github.com/ShalvinShaji/ToDone",
+  //   work_Desc:
+  //     "Todo application using React for the frontend and Go with the Gin framework for the backend.",
+  //   tech_stack: ["React", "Go", "Gin", "MongoDB", "Tailwind CSS"],
+  // },
   {
     title: "Personal Portfolio",
     contentLink: "https://github.com/ShalvinShaji/Portfolio",
