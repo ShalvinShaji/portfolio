@@ -58,7 +58,7 @@ const Portfolio = () => {
                         <img
                           src={content.image}
                           alt={content.title}
-                          className="w-100 mb-3 h-[250px] rounded"
+                          className="w-100 mb-3 h-[300px] rounded"
                         />
                         <div className="d-flex justify-content-center align-items-center">
                           <p className="content-title mb-0 me-2">
@@ -94,7 +94,7 @@ const Portfolio = () => {
                         </div>
                         <div className="tech-stack d-flex flex-wrap justify-content-start align-items-center">
                           {content.tech_stack?.map((tech, techIndex) => (
-                            <p className="p-1" key={techIndex}>
+                            <p className="mb-0 p-1" key={techIndex}>
                               {tech}
                             </p>
                           ))}

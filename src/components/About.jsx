@@ -14,22 +14,24 @@ import {
   PostgreSQLIcon,
   AWSIcon,
   TerraformIcon,
-  GitIcon, NextjsIcon, TypeScript,
+  GitIcon,
+  NextjsIcon,
+  TypeScript,
 } from "../utils";
 import "./About.css";
 
 const About = () => {
   const skills = [
-    {name : "Next JS",icon:NextjsIcon},
+    { name: "Next JS", icon: NextjsIcon },
     { name: "React", icon: ReactIcon },
     // { name: "Redux", icon: ReduxIcon },
-    { name: "Typescript", icon: TypeScript },
+    // { name: "Typescript", icon: TypeScript },
     { name: "JavaScript", icon: JavaScriptIcon },
     { name: "CSS", icon: CssIcon },
     { name: "Tailwind CSS", icon: TailwindcssIcon },
     { name: "Bootstrap", icon: BootstrapIcon },
     { name: "Python", icon: PythonIcon },
-    { name: "Go", icon: GoIcon },
+    // { name: "Go", icon: GoIcon },
     { name: "PostgreSQL", icon: PostgreSQLIcon },
     { name: "AWS Services", icon: AWSIcon },
     { name: "Terraform", icon: TerraformIcon },
@@ -38,33 +40,33 @@ const About = () => {
 
   const skillsRef = useRef([]);
 
-  // useEffect(() => {
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".skills-container",
-  //       start: "top 80%",
-  //       toggleActions: "play none none reverse",
-  //       once: true,
-  //     },
-  //   });
-  //
-  //   tl.fromTo(
-  //     skillsRef.current,
-  //     { opacity: 0, scale: 1 }, // Initial state of the skill icons
-  //     {
-  //       opacity: 1,
-  //       scale: 1, // Final state
-  //       duration: 0.5,
-  //       ease: "power2.out",
-  //       stagger: 0.1,
-  //     }
-  //   );
-  //
-  //   // Clean up on unmount
-  //   return () => {
-  //     tl.kill();
-  //   };
-  // }, []);
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".skills-container",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+        once: true,
+      },
+    });
+  
+    tl.fromTo(
+      skillsRef.current,
+      { opacity: 0, scale: 1 }, // Initial state of the skill icons
+      {
+        opacity: 1,
+        scale: 1, // Final state
+        duration: 0.5,
+        ease: "power2.out",
+        stagger: 0.1,
+      }
+    );
+  
+    // Clean up on unmount
+    return () => {
+      tl.kill();
+    };
+  }, []);
 
   return (
     <section id="about" className=" d-flex align-items-center ">
@@ -77,7 +79,7 @@ const About = () => {
                   About <span className="highlight-colour">Me</span>
                 </h1>
               </div>
-              <div className="col-lg-6">
+              <div className="col-12">
                 <p>
                   Currently I'm a Software Engineer at Tata Consultancy
                   Services.
@@ -95,7 +97,7 @@ const About = () => {
                   enhancing my technical skills.
                 </p>
               </div>
-              <div className="col-lg-6">
+              <div className="col-12">
                 <div className="skills-container d-flex flex-wrap justify-content-xl-start justify-content-center align-items-center">
                   {skills.map((skill, index) => (
                     <div

@@ -21,7 +21,8 @@ export const portfolio_contents = [
     image: "/assets/images/projects/athlo.png",
     contentLink: "https://athlo.vercel.app",
     codeLink: "https://github.com/ShalvinShaji/athlo",
-    work_Desc: "e-commerce frontend web app for sports products",
+    work_Desc:
+      "e-commerce frontend web app for sports products and accessories.",
     tech_stack: ["Next.js", "Tailwind CSS"],
   },
   {
