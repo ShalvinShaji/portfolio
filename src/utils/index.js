@@ -18,5 +18,4 @@ export { default as Logo } from "/assets/svg/logo.svg";
 export { default as LinkIcon } from "/assets/svg/Link.svg";
 export { default as NextjsIcon } from "/assets/svg/nextjs.svg";
 export { default as TypeScript } from "/assets/svg/typescript.svg";
-
-
+export { default as WebIcon } from "/assets/svg/web.svg";

@@ -1,10 +1,11 @@
 export const portfolio_contents = [
   {
     title: "GMM Hospital",
-    contentLink: "https://github.com/ShalvinShaji/GMM",
+    image: "/assets/images/projects/gmm.png",
+    contentLink: "/",
     codeLink: "https://github.com/ShalvinShaji/GMM",
     work_Desc:
-      "A hospital website providing access to healthcare services and navigation to departments, treatments, and appointments.",
+      "A hospital web app to manage all aspects of the client-facing application.",
     tech_stack: ["React", "Bootsrap"],
   },
   // {
@@ -17,14 +18,16 @@ export const portfolio_contents = [
   // },
   {
     title: "Athlo",
-    contentLink: "https://github.com/ShalvinShaji/athlo",
+    image: "/assets/images/projects/athlo.png",
+    contentLink: "https://athlo.vercel.app",
     codeLink: "https://github.com/ShalvinShaji/athlo",
     work_Desc: "e-commerce frontend web app for sports products",
     tech_stack: ["Next.js", "Tailwind CSS"],
   },
   {
     title: "Personal Portfolio",
-    contentLink: "https://github.com/ShalvinShaji/Portfolio",
+    image: "/assets/images/projects/portfolio.png",
+    contentLink: "/",
     codeLink: "https://github.com/ShalvinShaji/Portfolio",
     work_Desc:
       "A personal portfolio website built with React and Bootstrap showcasing my projects, skills, and experience.",
