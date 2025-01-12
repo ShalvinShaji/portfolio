@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Container, Row, Col } from "react-bootstrap";
-import { LinkIcon } from "../utils";
+import { LinkIcon, WebIcon } from "../utils";
 import { portfolio_contents } from "../constants";
 import "./Portfolio.css";
 
@@ -55,17 +55,36 @@ const Portfolio = () => {
                   >
                     <div className="content-box p-4">
                       <div className="d-flex flex-column justify-content-center align-items-start">
-                        <p className="content-title mb-0">{content.title}</p>
+                        <img
+                          src={content.image}
+                          alt={content.title}
+                          className="w-100 mb-3 h-[300px] rounded"
+                        />
                         <div className="d-flex justify-content-center align-items-center">
+                          <p className="content-title mb-0 me-2">
+                            {content.title}
+                          </p>
                           <a
                             href={content.codeLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="codeLink me-3"
+                            className="codeLink me-2"
                           >
                             <img
                               src={LinkIcon}
                               alt="Project link"
+                              className="link_icon"
+                            />
+                          </a>
+                          <a
+                            href={content.contentLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="codeLink text-white"
+                          >
+                            <img
+                              src={WebIcon}
+                              alt="Demo link"
                               className="link_icon"
                             />
                           </a>
@@ -75,7 +94,7 @@ const Portfolio = () => {
                         </div>
                         <div className="tech-stack d-flex flex-wrap justify-content-start align-items-center">
                           {content.tech_stack?.map((tech, techIndex) => (
-                            <p className="p-1" key={techIndex}>
+                            <p className="mb-0 p-1" key={techIndex}>
                               {tech}
                             </p>
                           ))}

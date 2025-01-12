@@ -1,7 +1,8 @@
 .content-box {
   background-color: #232323;
   width: 100%; /* Ensure the box takes up the full column width */
-  height: 250px; /* Fixed height for uniform boxes */
+  height: 430px;
+  /* Fixed height for uniform boxes */
   display: flex;
   justify-content: center;
   align-items: center;
