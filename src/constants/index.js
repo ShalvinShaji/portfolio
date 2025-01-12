@@ -7,22 +7,21 @@ export const portfolio_contents = [
       "A hospital website providing access to healthcare services and navigation to departments, treatments, and appointments.",
     tech_stack: ["React", "Bootsrap"],
   },
-  {
-    title: "GMM Hospital Admin Dashboard",
-    contentLink: "https://github.com/ShalvinShaji/GMM-Admin",
-    codeLink: "https://github.com/ShalvinShaji/GMM-Admin",
-    work_Desc:
-      "An admin page for a hospital web app to manage all aspects of the client-facing application.",
-    tech_stack: ["React", "Bootsrap"],
-  },
   // {
-  //   title: "ToDone",
-  //   contentLink: "https://github.com/ShalvinShaji/ToDone",
-  //   codeLink: "https://github.com/ShalvinShaji/ToDone",
+  //   title: "GMM Hospital Admin Dashboard",
+  //   contentLink: "https://github.com/ShalvinShaji/GMM-Admin",
+  //   codeLink: "https://github.com/ShalvinShaji/GMM-Admin",
   //   work_Desc:
-  //     "Todo application using React for the frontend and Go with the Gin framework for the backend.",
-  //   tech_stack: ["React", "Go", "Gin", "MongoDB", "Tailwind CSS"],
+  //     "An admin page for a hospital web app to manage all aspects of the client-facing application.",
+  //   tech_stack: ["React", "Bootsrap"],
   // },
+  {
+    title: "Athlo",
+    contentLink: "https://github.com/ShalvinShaji/athlo",
+    codeLink: "https://github.com/ShalvinShaji/athlo",
+    work_Desc: "e-commerce frontend web app for sports products",
+    tech_stack: ["Next.js", "Tailwind CSS"],
+  },
   {
     title: "Personal Portfolio",
     contentLink: "https://github.com/ShalvinShaji/Portfolio",
@@ -33,5 +32,4 @@ export const portfolio_contents = [
   },
 ];
 
-
-export const nav_items = ["Home", "Portfolio", "Blog"]
+export const nav_items = ["Home", "Portfolio", "Blog"];
