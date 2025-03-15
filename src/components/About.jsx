@@ -17,6 +17,9 @@ import {
   GitIcon,
   NextjsIcon,
   TypeScript,
+  Mongodb,
+  Nodejs,
+  Expressjs,
 } from "../utils";
 import "./About.css";
 
@@ -27,6 +30,9 @@ const About = () => {
     // { name: "Redux", icon: ReduxIcon },
     // { name: "Typescript", icon: TypeScript },
     { name: "JavaScript", icon: JavaScriptIcon },
+    { name: "Nodejs", icon: Nodejs },
+    { name: "Expressjs", icon: Expressjs },
+    { name: "MongoDB", icon: Mongodb },
     { name: "CSS", icon: CssIcon },
     { name: "Tailwind CSS", icon: TailwindcssIcon },
     { name: "Bootstrap", icon: BootstrapIcon },
@@ -49,7 +55,7 @@ const About = () => {
         once: true,
       },
     });
-  
+
     tl.fromTo(
       skillsRef.current,
       { opacity: 0, scale: 1 }, // Initial state of the skill icons
@@ -61,7 +67,7 @@ const About = () => {
         stagger: 0.1,
       }
     );
-  
+
     // Clean up on unmount
     return () => {
       tl.kill();
