@@ -19,3 +19,6 @@ export { default as LinkIcon } from "/assets/svg/Link.svg";
 export { default as NextjsIcon } from "/assets/svg/nextjs.svg";
 export { default as TypeScript } from "/assets/svg/typescript.svg";
 export { default as WebIcon } from "/assets/svg/web.svg";
+export { default as Nodejs } from "/assets/svg/nodejs.svg";
+export { default as Expressjs } from "/assets/svg/expressjs.svg";
+export { default as Mongodb } from "/assets/svg/mongodb.svg";
