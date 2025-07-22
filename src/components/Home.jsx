@@ -15,11 +15,11 @@ const Home = () => {
             <h3 className="mb-0 hero_intro ">Hey, I'm</h3>
             <p className="highlight-colour hero_name mb-0">Shalvin</p>
             <p className="hero_desc col-12 ">
-              A web developer and database administrator on a journey through
+              A software engineer on a journey through
               the tech world, one line at a time.
             </p>
             <div className="">
-              <p>You ca find me here :</p>
+              <p>You can find me here :</p>
               <HeroSocial />
             </div>
           </Col>
